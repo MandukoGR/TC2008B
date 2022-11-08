@@ -10,6 +10,6 @@
 **Inteligencia Artificial**: Sistema que percibe, razona y planea.
     * Machine learning
     * Deep learning
-    * Inteligencia de negocio
+    * Inteligencia de negocio.
 
 
