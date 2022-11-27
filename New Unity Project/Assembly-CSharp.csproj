@@ -36,9 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/MoveProjectile.cs" />
      <Compile Include="Assets/StarSparrow/Readme/Readme Files/Scripts/ReadmeStarSparrow.cs" />
      <Compile Include="Assets/Scripts/ShootingEnemy.cs" />
-     <Compile Include="Assets/Scripts/MoveProjectile.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />

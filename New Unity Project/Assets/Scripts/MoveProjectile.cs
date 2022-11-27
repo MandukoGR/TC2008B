@@ -6,6 +6,7 @@ public class MoveProjectile : MonoBehaviour
 {
     public float speed = 0f;
     public float angle = 0f;
+    public float secondsToDestroy = 0f;
     private GameObject boss;
     // get boss gameobject
 
@@ -19,18 +20,13 @@ public class MoveProjectile : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
-        // wait for 1 second before rotating
         StartCoroutine(RotateProjectile());
-        // Destroy the projectile after 10 seconds and -1 to bullet count
         StartCoroutine(destroyBullet());
-       
-        
-        // boss.GetComponent<ShootingEnemy>().bulletCount--;
         
     }
     IEnumerator destroyBullet()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(secondsToDestroy);
         Destroy(gameObject);
         boss.GetComponent<ShootingEnemy>().bulletCount--;
     }

@@ -8,6 +8,7 @@ public class ChuckNorris : MonoBehaviour
   public TextMeshProUGUI jokeText;
     public void NewJoke(){
       Joke j = APIHelper.GetNewJoke();
-      jokeText.text = j.value;
+      Debug.Log(j);
+      jokeText.text = j.data[1].value;
     }
 }
